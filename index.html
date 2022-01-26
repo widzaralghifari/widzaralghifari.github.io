@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Website Objek Wisata">
+        <meta name="keywords" content="Pulau Kaliantan, Lombok Timur, Nusa Tenggara Barat">
+        <meta name="description" content="Situs Tentang Objek Wisata">
+        <title>Objek Wisata</title>
+        <link rel="stylesheet" type="text/css">
+
+        <!--CSS Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--JQuery Link-->
+        <script type="text/javascript" src="assets/jquery3.6.0.min.js"></script>
+        <script type="text/javascript" src="assets/jquery-ui.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+        <!--LInk CSS-->
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <title>UAS Desain Web</title>
+        <script type="text/javascript">$(function(){$("#dialogku").dialog({autoOpen:false, show:'blind', hide:'explode'}); $('#dibuka').click(function(){$('#dialogku').dialog('open'); return false;});});</script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background-color: #f9fbfd;">
+                <div class="container-fluid">
+                  <img src="logo.jpg" alt="" width="33" height="28" class="d-inline-block align-text-top">
+                  <span class="h3">pantai Kaliantan</span>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#objekwisata">Objek Wisata</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="#saranaakomodasi">Sarana Akomodasi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#wawasan">Wawasan</a>
+                      </li>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <img src="search.png" alt="" width="35" height="30" class="d-inline-block align-text-top">
+                        <!--Modal-->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModallabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModallabel">Website Objek Wisata</h5>
+                                <button type="button" class="btn-close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Welcome Pantai Kaliantan
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Simpan</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <!--EndNavbar-->
+            <!--Courousal-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="gambar1.jpg" class="gambar" width="100%" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="h1">A MUST VISIT</h5>
+                      <p class="h3">Kitesurfing Lovers Paradise</p>
+                      <button type="button" class="btn success btn-lg" id="dibuka">Jelajahi</button>
+                      <button type="botton" class="btn btn-warning btn-lg">video</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="gambar2.jpg" class="gambar" width="100%" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="h1">A MUST VISIT</h5>
+                      <p class="h3">Kitesurfing Lovers Paradise</p>
+                      <button type="button" class="btn success btn-lg" id="dibuka">Jelajahi</button>
+                      <button type="botton" class="btn btn-warning btn-lg">Video</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="gambar3.jpg" class="gambar" width="100%" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="h1">A MUST VISIT</h5>
+                      <p class="h3">Kitesurfing Lovers Paradise</p>
+                      <button type="button" class="btn success btn-lg" id="dibuka">Jelajahi</button>
+                      <button type="botton" class="btn btn-warning btn-lg">Video</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div id="dialogku">
+              <h3>Video Pulau Kaliantan</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9raGvyd4r-o" title="youtube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--EndCourousal-->
+            <!--ObjekWisata-->
+            <div class="container-fluid " style="background-color: #F3F4F5;">
+                <p id="objekwisata" class="display-4" style="text-align:center; background-color: #F3F4F5;">Objek Wisata</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about-text">
+                            <h3>Kitesurfing</h3>
+                            <p class="lead">Pantai Kaliantan tampaknya kini semakin dikenal oleh para wisatawan karena keunikannya yang membuatnya bisa dijadikan sebagai tempat untuk melakukan banyak hal.</p> <a class="btn btn-outline-primary" href="#">Selengkapnya</a>
+                            <h5>Follow Me On The Website</h5>
+                            <a href="" class="btn btn-sm btn-outline-secondary">Facebook</a>
+                            <a href="" class="btn btn-sm btn-outline-success">Twitter</a>
+                            <a href="" class="btn btn-sm btn-outline-primary">Youtube</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <figure class="figure">
+                          <img src="gambar2.jpg" width="550px" height="300px" class="img-fluid" class="figure-img img-fluid rounded" alt="Gambar Rumah Adat Osing Kemiren">
+                          <figcaption class="figure-caption">Gambar Surfing</figcaption>
+                          </figure>                        
+                    </div>
+                </div>
+            <hr>
+            <div class="container-fluid">
+              <div class="row">
+              <div class="col-md-6">
+                  <figure class="figure">
+                      <img src="gambar3.jpg" width="550px" height="300px" class="img-fluid" class="figure-img img-fluid rounded" alt="Gambar Tradisi Adat">
+                      <figcaption class="figure-caption">Gambar Tradisi Adat</figcaption>
+                      </figure>
+              </div>
+              <div class="col-md-6">
+                  <div class="about-text">
+                      <h3>Desa Adat Pantai Kaliantan</h3>
+                      <p class="lead">Gendang beleq merupakan salah satu musik tradisional yang telah diwariskan orang terdahulu masyarakat Suku Sasak yang mendiami pulau Lombok, Nusa Tenggara Barat.</p> <a class="btn btn-outline-primary" href="#">Selengkapnya</a>
+                      <h5>Follow Me On The Website</h5>
+                      <a href="" class="btn btn-sm btn-outline-secondary">Facebook</a>
+                      <a href="" class="btn btn-sm btn-outline-success">Twitter</a>
+                      <a href="" class="btn btn-sm btn-outline-primary">Youtube</a>
+                  </div>
+              </div>      
+            <hr>
+            <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+            </nav>
+        </div>
+            <!--EndObjekWisata-->
+            <!--Card-->
+            <div id="tab">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#tab-1">Hotel</a></li>
+                <li class="page-item"><a class="page-link" href="#tab-2">Home Stay</a></li>
+                <li class="page-item"><a class="page-link" href="#tab-3">Restauran</a></li>
+              </ul>
+            <div id="tab-1">
+              <div class="container-fluid" style="background-color: #F3F4F5;">
+                  <p id="saranaakomodasi" class="display-4" style="text-align:center; background-color: #F3F4F5;">Sarana dan Akomodasi</p>
+                  <p id="saranaakomodasi" class="display-4" style="text-align:center; background-color: #a2d9ff;">Hotel</p>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card" style="width: 24rem;">
+                              <img src="hotel1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <h5 class="card-title">Hotel Panorama Ekas</h5>
+                                  <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                  <a class="navbar-brand" href="#">
+                                      <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                      <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                                  </a>
+                                  <a href="#" class="btn btn-primary">Lihat Harga</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card" style="width: 24rem;">
+                              <img src="hotel2.jpeg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Hotel Heaven On The Planet</h5>
+                                <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                <a class="navbar-brand" href="#">
+                                  <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                  <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                              </a>
+                                <a href="#" class="btn btn-primary">Lihat Harga</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card" style="width: 24rem;">
+                              <img src="hotel3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Hotel Jeeva Bloam Beach Camp</h5>
+                                <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                <a class="navbar-brand" href="#">
+                                  <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                  <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                              </a>
+                                <a href="#" class="btn btn-primary">Lihat Harga</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div id="tab-2">
+                <div class="container-fluid" style="background-color: #F3F4F5;">
+                    <p id="saranaakomodasi" class="display-4" style="text-align:center; background-color: #a2d9ff;">Homestay</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card" style="width: 24rem;">
+                                <img src="homestay1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Yuli's Homestay</h5>
+                                    <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                        <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary">Lihat Harga</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 24rem;">
+                                <img src="homestay2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Pineapple Homestay</h5>
+                                  <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                  <a class="navbar-brand" href="#">
+                                    <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                    <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                                </a>
+                                  <a href="#" class="btn btn-primary">Lihat Harga</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 24rem;">
+                                <img src="homestay3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ricel Homestay</h5>
+                                  <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                  <a class="navbar-brand" href="#">
+                                    <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                    <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                                </a>
+                                  <a href="#" class="btn btn-primary">Lihat Harga</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div id="tab-3">
+                <div class="container-fluid" style="background-color: #F3F4F5;">
+                    <p id="saranaakomodasi" class="display-4" style="text-align:center; background-color: #a2d9ff;">Restouran</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card" style="width: 24rem;">
+                                <img src="restouran1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Restouran Tiki Grove</h5>
+                                    <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                        <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary">Lihat Harga</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 24rem;">
+                                <img src="restouran2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Restouran Musa Cookery</h5>
+                                  <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                  <a class="navbar-brand" href="#">
+                                    <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                    <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                                </a>
+                                  <a href="#" class="btn btn-primary">Lihat Harga</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 24rem;">
+                                <img src="restouran3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Restouran Pockets & Pints</h5>
+                                  <img src="bintang.jpg" alt="" width="160" height="40" class="d-inline-block align-text-top">
+                                  <a class="navbar-brand" href="#">
+                                    <img src="lokasi.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                    <span>Jalan Pantai Beloam No. 1 Sekaroh</span>
+                                </a>
+                                  <a href="#" class="btn btn-primary">Lihat Harga</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <hr> 
+            <!--EndCard-->
+            <!--Progressbar-->
+            <div class="container-fluid" style="background-color: #a2d9ff;">
+                <p id="kunjungan" class="display-4" style="text-align:center; background-color: #a2d9ff;">Kunjungan Wisatawan</p>
+                <div class="progress" >
+                    <label class="h6">Japan : </label>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                </div>
+                <br>
+                <div class="progress">
+                    <label class="h6">China : </label>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                </div>
+                <br>
+                <div class="progress">
+                    <label class="h6">Thailand : </label>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                </div>
+                <br>
+                <div class="progress">
+                    <label class="h6">Europa : </label>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <!--EndProgressbar-->
+            <!--Contact-->
+            <div class="container-fluid" style="background-color: #a2d9ff;">
+                <p id="wawasan" class="display-4" style="text-align:center; background-color: #a2d9ff;">Hubungi Kami</p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="lead"><strong>Maps Location Pantai Kaliantan</strong></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15766.662229516971!2d116.47841742007996!3d-8.910650998825448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dccff19d2c3bc19%3A0xc53dbeda6392ec8a!2sPantai%20Kaliantan!5e0!3m2!1sid!2sid!4v1642859071722!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                <div class="col-md-6">
+                <form class="row g-3">
+                <div class="col-md-6 ">
+                
+                <label for="namadepan" class="form-label">Nama Depan</label>
+                <input type="text" class="form-control" id="namadepan">
+                
+                </div>
+                <div class="col-md-6">
+                <label for="namabelakang" class="form-label">Nama Belakang</label>
+                <input type="text" class="form-control" id="namabelakang">
+                </div>
+                
+                <div class="col-md-6">
+                
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                <label for="notelp" class="form-label">No Telp</label>
+                <input type="text" class="form-control" id="notelp" >
+                </div>
+                
+                <div class="col-12">
+                <label for="alamat" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="alamat" >
+                </div>
+                <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+                </div>
+                
+                <div class="col-md-4">
+                
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+                </select>
+                </div>
+                <div class="col-md-2">
+                
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">Check me out</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+                </form>
+                </div>
+                </div>
+            </div>
+            <br>
+            <!--EndContact-->
+            <!--Footer-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,96L13.3,101.3C26.7,107,53,117,80,144C106.7,171,133,213,160,240C186.7,267,213,277,240,245.3C266.7,213,293,139,320,122.7C346.7,107,373,149,400,186.7C426.7,224,453,256,480,250.7C506.7,245,533,203,560,197.3C586.7,192,613,224,640,240C666.7,256,693,256,720,213.3C746.7,171,773,85,800,96C826.7,107,853,213,880,213.3C906.7,213,933,107,960,90.7C986.7,75,1013,149,1040,160C1066.7,171,1093,117,1120,101.3C1146.7,85,1173,107,1200,144C1226.7,181,1253,235,1280,250.7C1306.7,267,1333,245,1360,224C1386.7,203,1413,181,1427,170.7L1440,160L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z"></path></svg>
+            <footer class="text-white text-center" style="background-color:#a2d9ff;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>Modul Desain Web Stimik Stikom Indonesia</p>
+                        </div>
+                        <div class="col-md-4">
+                            <ul style="text-align:left;" class="list-unstyled">
+                                <li ><a href="#"></a> Home</li>
+                                <li ><a href="#objekwisata"></a> Objek Wisata</li>
+                                <li ><a href="#sarana"></a> Sarana dan Akomodasi</li>
+                                <li ><a href="#wawasan"></a> Wawasan</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Web Desain Widzar Al Ghifari</h4>
+                            <p>Menjadikan masalah menjadi solusi</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--EndFooter-->
+
+        </div>
+
+        <!--JS Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>
